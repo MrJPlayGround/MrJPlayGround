@@ -1,7 +1,7 @@
-<h1 align="center">Building practical AI systems</h1>
+<h1 align="center">Practical AI systems, not shiny demos</h1>
 
 <p align="center">
-  <b>AI workflow engineer building agent systems, local LLM tools, and practical AI products.</b>
+  <b>Agent workflows · local LLM tools · MCP/context systems · products with real users</b>
 </p>
 
 <p align="center">
@@ -12,104 +12,129 @@
   <a href="https://linkedin.com/in/joaoraposo-dev">LinkedIn</a>
 </p>
 
-```text
-> whoami
-
-AI workflow engineer in Portugal.
-Building agent systems, context tooling, local LLM apps, and products people actually use.
-```
-
-## What I build
-
-- Applied AI tools that connect LLMs to real workflows: queues, scoped tools, approval gates, context systems, and reviewable outputs.
-- Agent and developer tooling around Cursor, Claude/Anthropic, Claude Code, MCP, local LLMs, and OpenAI-compatible APIs.
-- Products with real usage, not just demos. NyxLabs is live with hundreds of users and thousands of trade entries.
-- Data and integration systems when they matter, especially when messy APIs, state, logs, and debugging are involved.
-
-## Current focus
+<p align="center">
+  <img src="https://img.shields.io/badge/TypeScript-111827?style=flat-square&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Bun-111827?style=flat-square&logo=bun&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-111827?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-111827?style=flat-square&logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/Supabase-111827?style=flat-square&logo=supabase&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQLite-111827?style=flat-square&logo=sqlite&logoColor=white" />
+</p>
 
 ```text
-agent runtimes        context infrastructure       MCP servers
-local-first AI apps   workflow automation          human-reviewed tools
-Claude / Cursor       TypeScript / Bun / Python    SQLite-backed state
+booting profile...
+
+focus:        full AI systems
+building:     agent tooling, context infra, local-first AI apps
+using:        Cursor, Claude/Anthropic, Claude Code, MCP, Ollama, Whisper
+stack:        TypeScript, Bun, Python, React, Supabase, SQLite
+preference:   useful systems that survive real users
 ```
 
-## Selected projects
+## I like building the layer between LLMs and actual work
+
+The interesting part is not the chatbot. It is everything around it:
+
+- queues, routing, state, retries, and progress visibility
+- scoped tools, approval gates, and safe execution boundaries
+- context systems that know what to include and what to leave out
+- local-first workflows that do not burn money for no reason
+- products that are useful when the demo ends
+
+## Things I have built
+
+<table>
+<tr>
+<td width="50%" valign="top">
 
 ### NyxLabs
 
 Live app: [nyxlabs.app](https://nyxlabs.app)
 
-A structured workflow/data product for trade journaling, review, analytics, and AI-readable context.
+A workflow/data product with hundreds of live users and thousands of trade entries.
 
-- Hundreds of live users and thousands of trade entries.
-- Built with React, TypeScript, Vite, TailwindCSS, Supabase, and Vercel.
-- Includes account state, notes, screenshots, plans, analytics, sync workflows, and a read-only AI context layer.
-- Designed around scoped access, revocable tokens, and keeping AI tools useful without exposing sensitive credentials.
+Built around structured records, notes, screenshots, analytics, sync workflows, and an AI-readable context layer.
+
+`React` `TypeScript` `Supabase` `Vercel` `MCP design`
+
+</td>
+<td width="50%" valign="top">
 
 ### NyxHive
 
-Repo: [github.com/MrJPlayGround/NyxHive](https://github.com/MrJPlayGround/NyxHive)
+Repo: [NyxHive](https://github.com/MrJPlayGround/NyxHive)
 
 An experimental local-first multi-agent runtime.
 
-- Routed Discord, Telegram, Slack, REST/webhook, and gateway-style inputs into queue-backed AI workflows.
-- Explored lead-agent delegation, bounded specialist workers, approval gates, scoped tools, memory, traces, and queue health.
-- Built mostly with TypeScript, Bun, SQLite, Hono, MCP, and Claude/Anthropic workflows.
+Explored queue-backed workflows, lead-agent delegation, specialist workers, approval gates, memory, traces, and MCP tools.
+
+`TypeScript` `Bun` `SQLite` `Hono` `MCP` `Claude/Anthropic`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
 ### TLDW
 
-Repo: [github.com/MrJPlayGround/TLDW](https://github.com/MrJPlayGround/TLDW)
+Repo: [TLDW](https://github.com/MrJPlayGround/TLDW)
 
 A local-first video-to-summary app.
 
-- Turns video URLs into cleaned transcripts and structured LLM summaries.
-- Uses Bun, TypeScript, Hono, Whisper, Ollama, and OpenAI-compatible providers.
-- Includes yt-dlp ingestion, fallback paths, SSE progress streaming, transcript cleanup, and Markdown/TXT export.
+Takes video URLs, extracts audio/captions, transcribes speech, and produces cleaned summaries and transcripts.
+
+`Bun` `TypeScript` `Hono` `Whisper` `Ollama` `yt-dlp`
+
+</td>
+<td width="50%" valign="top">
 
 ### NyxLabs MCP
 
-Repo: [github.com/MrJPlayGround/nyxlabs-mcp](https://github.com/MrJPlayGround/nyxlabs-mcp)
+Repo: [nyxlabs-mcp](https://github.com/MrJPlayGround/nyxlabs-mcp)
 
-A secure read-only MCP bridge for NyxLabs.
+A read-only MCP bridge for NyxLabs.
 
-- Lets local AI clients like Claude Desktop and Cursor query NyxLabs context.
-- Uses scoped tokens, typed tool schemas, and stdio MCP transport.
-- Exposes useful context without write actions or credential access.
+Lets local AI clients like Claude Desktop and Cursor query structured user context without write actions or credential access.
 
-## Tools I actually use
+`Node.js` `MCP SDK` `Zod` `stdio` `scoped tokens`
 
-<p>
-  <img src="https://img.shields.io/badge/TypeScript-111827?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Bun-111827?style=for-the-badge&logo=bun&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-111827?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-111827?style=for-the-badge&logo=react&logoColor=white" />
-  <img src="https://img.shields.io/badge/Supabase-111827?style=for-the-badge&logo=supabase&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQLite-111827?style=for-the-badge&logo=sqlite&logoColor=white" />
-</p>
+</td>
+</tr>
+</table>
+
+## Current work shape
 
 ```text
-LLMs:        Claude / Anthropic, OpenAI-compatible APIs, Ollama
-AI tooling:  Cursor, Claude Code, MCP, Whisper, local-first workflows
-Backend:     TypeScript, Bun, Node.js, Python, Hono, REST/SOAP APIs
-Frontend:    React, Vite, TailwindCSS, dashboards, workflow UIs
-Ops/data:    SQLite, Supabase, ETL pipelines, logs, job state, debugging
+AI workflows       agent runtimes       context infrastructure
+MCP servers        local LLM apps       human-reviewed tooling
+Cursor / Claude    TypeScript / Bun     SQLite-backed state
 ```
 
-## The short CV version
+## Short CV
 
 - Integrations Developer / AI Workflow Builder at Optiply.
 - Built AI-assisted support and debugging workflows around docs, ETL evidence, logs, API state, and escalation packets.
-- Built and maintained Singer/Meltano-style connectors across REST/SOAP APIs, pagination, schemas, OAuth/API errors, state/bookmarks, product/order streams, and sync reliability.
+- Built and maintained Singer/Meltano-style connectors across REST/SOAP APIs, schemas, OAuth/API errors, state/bookmarks, product/order streams, and sync reliability.
 - Previously worked across kununu, Capgemini Engineering, and Capgemini internships.
 - Formal software training plus a lot of self-directed AI systems work.
 
-## What I am looking for
+## Where I am heading
 
 I want to move deeper into full AI systems: agent tooling, developer tools, context infrastructure, local-first AI apps, and products that survive contact with real users.
 
 If the work sits between LLMs and real execution, I am interested.
 
+<details>
+<summary>Small operating opinions</summary>
+
+- Agents need scope more than personality.
+- Memory should be inspectable, not mystical.
+- Human approval gates are product features, not bureaucracy.
+- Local-first is underrated until the API bill arrives.
+- The demo is where the work starts.
+
+</details>
+
 <p align="center">
-  <i>Practical AI systems over shiny demos. The demo is where the work starts.</i>
+  <i>Build the boring rails. Then let the AI run on them.</i>
 </p>
