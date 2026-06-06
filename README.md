@@ -1,4 +1,4 @@
-<h1 align="center">João Raposo</h1>
+<h1 align="center">Building practical AI systems</h1>
 
 <p align="center">
   <b>AI workflow engineer building agent systems, local LLM tools, and practical AI products.</b>
@@ -15,9 +15,8 @@
 ```text
 > whoami
 
-João Raposo
-AI workflow & integration developer in Portugal.
-Currently moving deeper into full AI systems: agents, context, tools, and products people actually use.
+AI workflow engineer in Portugal.
+Building agent systems, context tooling, local LLM apps, and products people actually use.
 ```
 
 ## What I build
