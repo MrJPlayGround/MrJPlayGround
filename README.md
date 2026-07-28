@@ -8,8 +8,7 @@
   <a href="https://nyxlabs.app">NyxLabs</a> ·
   <a href="https://github.com/MrJPlayGround/NyxHive">NyxHive</a> ·
   <a href="https://github.com/MrJPlayGround/TLDW">TLDW</a> ·
-  <a href="https://github.com/MrJPlayGround/nyxlabs-mcp">NyxLabs MCP</a> ·
-  <a href="https://linkedin.com/in/joaoraposo-dev">LinkedIn</a>
+  <a href="https://github.com/MrJPlayGround/nyxlabs-mcp">NyxLabs MCP</a>
 </p>
 
 <p align="center">
@@ -115,7 +114,7 @@ Cursor / Claude       OpenAI Codex                  TypeScript / Bun / Python
 
 ## Short CV
 
-- Integrations Developer / AI Workflow Builder at Optiply since 2023.
+- Build integration and AI workflow systems in production contexts.
 - Own integration work end to end: discovery, client context, data flows, connector architecture, delivery plans, and operational handoff.
 - Build AI-assisted support and debugging workflows around docs, ETL evidence, logs, API state, investigation notes, and escalation packets.
 - Develop and maintain Singer/Meltano-style connectors across REST/SOAP APIs, schemas, OAuth/API errors, state/bookmarks, product/order streams, and sync reliability.
